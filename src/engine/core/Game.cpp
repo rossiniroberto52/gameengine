@@ -75,6 +75,26 @@ private:
     Color color_;
     SDL_Texture* texture_;
     SDL_RendererFlip flip_;
+
+public:
+    SDL_Texture* getTexture() const {
+        return texture_;
+    }
+
+    void setTexture(SDL_Texture* texture) {
+        if (texture_ != texture) {
+            if (texture_) {
+                SDL_DestroyTexture(texture_);
+            }
+            texture_ = texture;
+            if (texture_) {
+                SDL_QueryTexture(texture_, NULL, NULL, &width_, &height_);
+            } else {
+                width_ = 0;
+                height_ = 0;
+            }
+        }
+    }
 };
 
 class Game {
@@ -128,8 +148,8 @@ public:
         }
         // Render dragging sprite if any
         if (draggingSprite_ && draggingSpriteTexture_) {
-            SDL_Rect dstRect = { draggingSpriteX_ - 32, draggingSpriteY_ - 32, 64, 64 };
-            SDL_RenderCopy(renderer_, draggingSpriteTexture_, NULL, &dstRect);
+            SDL_Rect dstRect = { draggingSpriteX_, draggingSpriteY_, 64, 64 };
+            SDL_RenderCopyEx(renderer_, draggingSpriteTexture_, NULL, &dstRect, 0, NULL, draggingSpriteFlip_ ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE);
         }
         SDL_RenderPresent(renderer_);
     }
@@ -152,6 +172,16 @@ public:
             case SDL_QUIT:
                 running_ = false;
                 break;
+            case SDL_KEYDOWN:
+        if (event.key.keysym.sym == SDLK_f) {
+            if (draggedObjectIndex_ != -1) {
+                objects_[draggedObjectIndex_]->flipHorizontal();
+            } else if (draggingSprite_ && draggingSpriteTexture_) {
+                // Implement flip for dragging sprite texture by toggling a flip flag
+                draggingSpriteFlip_ = !draggingSpriteFlip_;
+            }
+        }
+                break;
             default:
                 if (imageSelector_) {
                     imageSelector_->handleEvent(event);
@@ -161,6 +191,7 @@ public:
                 if (event.button.button == SDL_BUTTON_LEFT) {
                     int mx = event.button.x;
                     int my = event.button.y;
+                    SDL_Log("Mouse Button Down at (%d, %d)", mx, my);
                     // Check if clicked on image selector
                     if (imageSelector_ && mx >= 10 && mx <= 74 && my >= 10 && my <= 10 + (int)(70 * imageSelector_->getImageCount())) {
                         // Start dragging selected image
@@ -190,11 +221,33 @@ public:
             case SDL_MOUSEBUTTONUP:
                 if (event.button.button == SDL_BUTTON_LEFT) {
                     if (draggingSprite_) {
-                        // Add new sprite at drop position
-                        auto newObj = std::make_unique<GameObject>(draggingSpriteX_, draggingSpriteY_, draggingSpriteTexture_);
-                        addObject(std::move(newObj));
+                        // Check if drop position overlaps existing object
+                        bool replaced = false;
+                        for (auto& obj : objects_) {
+                        if (obj->containsPoint(draggingSpriteX_, draggingSpriteY_)) {
+                            // Replace texture of existing object
+                            if (obj->getTexture()) {
+                                SDL_DestroyTexture(obj->getTexture());
+                            }
+                            obj->setTexture(draggingSpriteTexture_);
+                            if (draggingSpriteFlip_) {
+                                obj->flipHorizontal();
+                            }
+                            replaced = true;
+                            break;
+                        }
+                        }
+                        if (!replaced) {
+                            // Add new sprite at drop position
+                            auto newObj = std::make_unique<GameObject>(draggingSpriteX_, draggingSpriteY_, draggingSpriteTexture_);
+                            if (draggingSpriteFlip_) {
+                                newObj->flipHorizontal();
+                            }
+                            addObject(std::move(newObj));
+                        }
                         draggingSpriteTexture_ = nullptr;
                         draggingSprite_ = false;
+                        draggingSpriteFlip_ = false; // reset flip flag after drop
                     }
                     draggedObjectIndex_ = -1;
                 }
@@ -203,11 +256,13 @@ public:
                 if (draggedObjectIndex_ != -1) {
                     int mx = event.motion.x;
                     int my = event.motion.y;
+                    SDL_Log("Dragging existing object index %d to (%d, %d)", draggedObjectIndex_, mx, my);
                     objects_[draggedObjectIndex_]->setPosition(mx - dragOffsetX_, my - dragOffsetY_);
                 }
                 if (draggingSprite_) {
                     draggingSpriteX_ = event.motion.x;
                     draggingSpriteY_ = event.motion.y;
+                    SDL_Log("Dragging sprite to (%d, %d)", draggingSpriteX_, draggingSpriteY_);
                 }
                 break;
             }
@@ -229,6 +284,7 @@ private:
     SDL_Texture* draggingSpriteTexture_;
     int draggingSpriteX_;
     int draggingSpriteY_;
+    bool draggingSpriteFlip_ = false;
 };
 
 int main() {

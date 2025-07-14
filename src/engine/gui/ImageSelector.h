@@ -13,6 +13,7 @@ public:
     void render(int x, int y);
     void handleEvent(const SDL_Event& event);
     std::string getSelectedImagePath() const;
+    int getImageCount() const;
 
 private:
     SDL_Renderer* renderer_;

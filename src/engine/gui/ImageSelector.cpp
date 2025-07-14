@@ -91,3 +91,7 @@ std::string ImageSelector::getSelectedImagePath() const {
     }
     return "";
 }
+
+int ImageSelector::getImageCount() const {
+    return (int)textures_.size();
+}
