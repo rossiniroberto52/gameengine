@@ -224,6 +224,9 @@ Engine2D_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Engine2D_SOURCE_DIR:STATIC=/home/rossini/cpp/gameengine
 
+//The directory containing a CMake configuration file for SDL2_image.
+SDL2_image_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SDL2_image
+
 
 ########################
 # INTERNAL cache entries

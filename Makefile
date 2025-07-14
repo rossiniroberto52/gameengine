@@ -262,6 +262,30 @@ src/engine/core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.s
 .PHONY : src/engine/core/Window.cpp.s
 
+src/engine/gui/ImageSelector.o: src/engine/gui/ImageSelector.cpp.o
+.PHONY : src/engine/gui/ImageSelector.o
+
+# target to build an object file
+src/engine/gui/ImageSelector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.o
+.PHONY : src/engine/gui/ImageSelector.cpp.o
+
+src/engine/gui/ImageSelector.i: src/engine/gui/ImageSelector.cpp.i
+.PHONY : src/engine/gui/ImageSelector.i
+
+# target to preprocess a source file
+src/engine/gui/ImageSelector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.i
+.PHONY : src/engine/gui/ImageSelector.cpp.i
+
+src/engine/gui/ImageSelector.s: src/engine/gui/ImageSelector.cpp.s
+.PHONY : src/engine/gui/ImageSelector.s
+
+# target to generate assembly for a file
+src/engine/gui/ImageSelector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.s
+.PHONY : src/engine/gui/ImageSelector.cpp.s
+
 third_party/glad/src/glad.o: third_party/glad/src/glad.c.o
 .PHONY : third_party/glad/src/glad.o
 
@@ -311,6 +335,9 @@ help:
 	@echo "... src/engine/core/Window.o"
 	@echo "... src/engine/core/Window.i"
 	@echo "... src/engine/core/Window.s"
+	@echo "... src/engine/gui/ImageSelector.o"
+	@echo "... src/engine/gui/ImageSelector.i"
+	@echo "... src/engine/gui/ImageSelector.s"
 	@echo "... third_party/glad/src/glad.o"
 	@echo "... third_party/glad/src/glad.i"
 	@echo "... third_party/glad/src/glad.s"

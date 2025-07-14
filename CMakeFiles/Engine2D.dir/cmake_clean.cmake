@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o.d"
   "CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o"
   "CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o.d"
+  "CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.o"
+  "CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.o.d"
   "Engine2D"
   "Engine2D.pdb"
 )

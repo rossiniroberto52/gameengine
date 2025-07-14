@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rossini/cpp/gameengine/src/engine/core/Render.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o.d"
   "/home/rossini/cpp/gameengine/src/engine/core/Shader.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o.d"
   "/home/rossini/cpp/gameengine/src/engine/core/Window.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o.d"
+  "/home/rossini/cpp/gameengine/src/engine/gui/ImageSelector.cpp" "CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/gui/ImageSelector.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

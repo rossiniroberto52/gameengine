@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rossini/cpp/gameengine/src/engine/core -I/home/rossini/cpp/gameengine/third_party/glad/include
+CXX_INCLUDES = -I/home/rossini/cpp/gameengine/src/engine/core -I/home/rossini/cpp/gameengine/src/engine/gui -I/home/rossini/cpp/gameengine/third_party/glad/include
 
 CXX_FLAGS = -std=gnu++14
 
