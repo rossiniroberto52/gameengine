@@ -83,12 +83,12 @@ clean: CMakeFiles/glad.dir/clean
 CMakeFiles/Engine2D.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=1,2,3,4,5 "Built target Engine2D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Engine2D"
 .PHONY : CMakeFiles/Engine2D.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Engine2D.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rossini/cpp/gameengine/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rossini/cpp/gameengine/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Engine2D.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rossini/cpp/gameengine/CMakeFiles 0
 .PHONY : CMakeFiles/Engine2D.dir/rule
@@ -109,7 +109,7 @@ CMakeFiles/Engine2D.dir/clean:
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=6,7 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=7,8 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.

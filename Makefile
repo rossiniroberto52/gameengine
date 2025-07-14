@@ -142,6 +142,30 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+src/engine/core/Game.o: src/engine/core/Game.cpp.o
+.PHONY : src/engine/core/Game.o
+
+# target to build an object file
+src/engine/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o
+.PHONY : src/engine/core/Game.cpp.o
+
+src/engine/core/Game.i: src/engine/core/Game.cpp.i
+.PHONY : src/engine/core/Game.i
+
+# target to preprocess a source file
+src/engine/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.i
+.PHONY : src/engine/core/Game.cpp.i
+
+src/engine/core/Game.s: src/engine/core/Game.cpp.s
+.PHONY : src/engine/core/Game.s
+
+# target to generate assembly for a file
+src/engine/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Engine2D.dir/build.make CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.s
+.PHONY : src/engine/core/Game.cpp.s
+
 src/engine/core/GameObject.o: src/engine/core/GameObject.cpp.o
 .PHONY : src/engine/core/GameObject.o
 
@@ -272,6 +296,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Engine2D"
 	@echo "... glad"
+	@echo "... src/engine/core/Game.o"
+	@echo "... src/engine/core/Game.i"
+	@echo "... src/engine/core/Game.s"
 	@echo "... src/engine/core/GameObject.o"
 	@echo "... src/engine/core/GameObject.i"
 	@echo "... src/engine/core/GameObject.s"

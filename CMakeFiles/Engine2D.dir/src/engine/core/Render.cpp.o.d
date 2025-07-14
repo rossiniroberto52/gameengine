@@ -3,8 +3,8 @@ CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/rossini/cpp/gameengine/src/engine/core/Render.h \
  /home/rossini/cpp/gameengine/src/engine/core/Window.h \
- /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /home/rossini/cpp/gameengine/third_party/glad/include/glad/glad.h \
+ /home/rossini/cpp/gameengine/third_party/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,9 +20,9 @@ CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h \
- /home/rossini/cpp/gameengine/third_party/glad/include/KHR/khrplatform.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /home/rossini/cpp/gameengine/src/engine/core/Shader.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -117,9 +117,8 @@ CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/functional_hash.h \
  /usr/include/c++/13/bits/hash_bytes.h \
- /usr/include/c++/13/bits/basic_string.tcc \
- /home/rossini/cpp/gameengine/third_party/glad/include/glad/glad.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/glm/glm.hpp \

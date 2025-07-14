@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/rossini/cpp/gameengine/src/engine/core/Game.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o.d"
   "/home/rossini/cpp/gameengine/src/engine/core/GameObject.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o.d"
   "/home/rossini/cpp/gameengine/src/engine/core/Render.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o.d"
   "/home/rossini/cpp/gameengine/src/engine/core/Shader.cpp" "CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o" "gcc" "CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o.d"

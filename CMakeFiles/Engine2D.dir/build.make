@@ -69,10 +69,24 @@ include CMakeFiles/Engine2D.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Engine2D.dir/flags.make
 
+CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o: CMakeFiles/Engine2D.dir/flags.make
+CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o: src/engine/core/Game.cpp
+CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o: CMakeFiles/Engine2D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o -MF CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o.d -o CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o -c /home/rossini/cpp/gameengine/src/engine/core/Game.cpp
+
+CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rossini/cpp/gameengine/src/engine/core/Game.cpp > CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.i
+
+CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rossini/cpp/gameengine/src/engine/core/Game.cpp -o CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.s
+
 CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o: CMakeFiles/Engine2D.dir/flags.make
 CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o: src/engine/core/GameObject.cpp
 CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o: CMakeFiles/Engine2D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o -MF CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o.d -o CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o -c /home/rossini/cpp/gameengine/src/engine/core/GameObject.cpp
 
 CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.s: cmake_force
 CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: CMakeFiles/Engine2D.dir/flags.make
 CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: src/engine/core/Render.cpp
 CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o: CMakeFiles/Engine2D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o -MF CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o.d -o CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o -c /home/rossini/cpp/gameengine/src/engine/core/Render.cpp
 
 CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.s: cmake_force
 CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o: CMakeFiles/Engine2D.dir/flags.make
 CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o: src/engine/core/Window.cpp
 CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o: CMakeFiles/Engine2D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o -MF CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o.d -o CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o -c /home/rossini/cpp/gameengine/src/engine/core/Window.cpp
 
 CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.s: cmake_force
 CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o: CMakeFiles/Engine2D.dir/flags.make
 CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o: src/engine/core/Shader.cpp
 CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o: CMakeFiles/Engine2D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o -MF CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o.d -o CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o -c /home/rossini/cpp/gameengine/src/engine/core/Shader.cpp
 
 CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.i: cmake_force
@@ -127,6 +141,7 @@ CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.s: cmake_force
 
 # Object files for target Engine2D
 Engine2D_OBJECTS = \
+"CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o" \
 "CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o" \
 "CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o" \
 "CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o" \
@@ -135,6 +150,7 @@ Engine2D_OBJECTS = \
 # External object files for target Engine2D
 Engine2D_EXTERNAL_OBJECTS =
 
+Engine2D: CMakeFiles/Engine2D.dir/src/engine/core/Game.cpp.o
 Engine2D: CMakeFiles/Engine2D.dir/src/engine/core/GameObject.cpp.o
 Engine2D: CMakeFiles/Engine2D.dir/src/engine/core/Render.cpp.o
 Engine2D: CMakeFiles/Engine2D.dir/src/engine/core/Window.cpp.o
@@ -142,7 +158,7 @@ Engine2D: CMakeFiles/Engine2D.dir/src/engine/core/Shader.cpp.o
 Engine2D: CMakeFiles/Engine2D.dir/build.make
 Engine2D: libglad.a
 Engine2D: CMakeFiles/Engine2D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Engine2D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rossini/cpp/gameengine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Engine2D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Engine2D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

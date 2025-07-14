@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Engine2D
+  src/engine/core/Game.cpp
   src/engine/core/GameObject.cpp
   src/engine/core/Render.cpp
   src/engine/core/Window.h
@@ -26,6 +27,7 @@ target_link_libraries(Engine2D
   glfw
   GLEW
   GL
+  SDL2
 )
 
 add_library(glad STATIC
