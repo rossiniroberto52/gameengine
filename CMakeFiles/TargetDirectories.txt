@@ -1,4 +1,0 @@
-/home/rossini/cpp/gameengine/CMakeFiles/Engine2D.dir
-/home/rossini/cpp/gameengine/CMakeFiles/glad.dir
-/home/rossini/cpp/gameengine/CMakeFiles/edit_cache.dir
-/home/rossini/cpp/gameengine/CMakeFiles/rebuild_cache.dir
